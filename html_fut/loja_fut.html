@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="../css_fut/loja_fut.css" media="screen" />
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shopping Cart Js</title>
+    <body>
+        <header>
+            <nav>
+              <a class="logo" href="">King of the Ball</a>
+              <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a href="../html_fut/home_fut.html">Início</a></li>
+                <li><a href="../html_fut/sobre_nos.html">Sobre</a></li>
+                <li><a href="../html_fut/noticia_fut.html">Notícias</a></li>
+                <li><a href="../html_fut/loja_fut.html">Loja</a></li>
+                <li style="float:left;" class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Tabelas</a>
+                  <div class="dropdown-content">
+                    <a href="../html_fut/brasileirão_fut.html">Brasileirão-A</a>
+                    <a href="../html_fut/brasileirão_b_fut.html">Brasileirão-B</a>
+                    <a href="../html_fut/copa_b_fut.html">Copa Do Brasil</a>
+                    <li style="float:left;" class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Meu Time</a>
+                        <div class="dropdown-content">
+                          <a href="../html_fut/america_mg.html">America-MG</a>
+                          <a href="../html_fut/atletico_mg_fut.html">Atletico-MG</a>
+                          <a href="../html_fut/cruzeiro_fut.html">Cruzeiro</a>
+                          <li style="float:left;" class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn"><img src="../img_fut/icons8-configurações certo.png" width="25px" height="25px"></a>
+                            <div class="dropdown-content">
+                              <a href="../html_fut/edit_perfil.html">Editar Perfil</a>
+                              <a href="../index_fut.html">Sair</a>
+                        </div>
+              </ul>
+            </nav>
+          
+          <br>
+          <br>
+          
+          <div class="header-section container">
+            <img class="logo" src="logo.png" style="margin-top: 2%;" alt="">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="../img_fut/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Meu Carrinho</h3>
+                <div class="card-items">
+                  
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="../img_fut/caneca-botafogo.jpg" alt="">
+                    <p><span>25</span>$</p>
+                </div>
+                <p class="title">Caneca do Botafogo</p>
+                <a href="" data-id="1" class="btn-add-cart">ADD Carrinho</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img_fut/caneca-palmeira.jpg" alt="">
+                    <p><span>25</span>$</p>
+                </div>
+                <p class="title">Caneca do Palmeira</p>
+                <a href="" class="btn-add-cart" data-id="2">ADD Carrinho</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img_fut/caneca-cruzeiro.jpg" alt="">
+                    <p><span>25</span>$</p>
+                </div>
+                <p class="title">Caneca do Cruzeiro</p>
+                <a href="" data-id="3" class="btn-add-cart">ADD Carrinho</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img_fut/caneca-atletico.jpg" alt="">
+                    <p><span>25</span>$</p>
+                </div>
+                <p class="title">Caneca do Atletico-MG</p>
+                <a href="" data-id="4" class="btn-add-cart">ADD Carrinho</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img_fut/caneca-fluminense.jpg" alt="">
+                    <p><span>25</span>$</p>
+                </div>
+                <p class="title">Caneca do Fluminense</p>
+                <a href="" data-id="5" class="btn-add-cart">ADD Carrinho</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../img_fut/caneca-vasco.jpg" alt="">
+                    <p><span>25</span>$</p>
+                </div>
+                <p class="title">Caneca do Vasco</p>
+                <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="../img_fut/caneca-santos.jpg" alt="">
+                  <p><span>25</span>$</p>
+              </div>
+              <p class="title">Caneca do Santos</p>
+              <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+          </div>
+          <div class="carts">
+            <div>
+                <img src="../img_fut/caneca-sao-paulo.jpg" alt="">
+                <p><span>25</span>$</p>
+            </div>
+            <p class="title">Caneca do São Paulo</p>
+            <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+        </div>
+        <div class="carts">
+          <div>
+              <img src="../img_fut/caneca-bahia.jpg" alt="">
+              <p><span>25</span>$</p>
+          </div>
+          <p class="title">Caneca do Bahia</p>
+          <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+      </div>
+      <div class="carts">
+        <div>
+            <img src="../img_fut/caneca-fortaleza.jpg" alt="">
+            <p><span>25</span>$</p>
+        </div>
+        <p class="title">Caneca do Fortaleza</p>
+        <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+    </div>
+    <div class="carts">
+      <div>
+          <img src="../img_fut/caneca-ceara.jpg" alt="">
+          <p><span>25</span>$</p>
+      </div>
+      <p class="title">Caneca do Ceará</p>
+      <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+  </div>
+  <div class="carts">
+    <div>
+        <img src="../img_fut/caneca-atleticopr.jpg" alt="">
+        <p><span>25</span>$</p>
+    </div>
+    <p class="title">Caneca do Atletico-PR</p>
+    <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+</div>
+<div class="carts">
+  <div>
+      <img src="../img_fut/caneca-csa.jpg" alt="">
+      <p><span>25</span>$</p>
+  </div>
+  <p class="title">Caneca do Csa</p>
+  <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+</div>
+<div class="carts">
+  <div>
+      <img src="../img_fut/caneca-avai.jpg" alt="">
+      <p><span>25</span>$</p>
+  </div>
+  <p class="title">Caneca do Avaí</p>
+  <a href="" data-id="6" class="btn-add-cart">ADD Carrinho</a>
+</div>
+          
+          <script src="../javascript_fut/loja_fut.js"></script>
+    </body>
+</html>

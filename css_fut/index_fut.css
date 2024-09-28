@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img_fut/futebol_index.jpeg);
+    background-size: cover;
+    position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 300px;
+    padding: 50px;
+    background-color: #24b400;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    text-align: center;
+  }
+  
+  .container input[type="text"],
+  .container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .container button {
+    width: 28%;
+    padding: 10px;
+    background-color: #b9b600;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .container button:hover {
+    background-color: #9b271f;
+  }
+  
+  .container .register-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #b9b600;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .container .register-button:hover {
+    background-color: #9b271f;
+  }

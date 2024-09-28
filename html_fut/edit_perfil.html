@@ -1,0 +1,80 @@
+<html lang="pt-br">
+    <link rel="stylesheet" type="text/css" href="../css_fut/edit_perfil.css" media="screen" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrosell</title>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+              <a class="logo" href="">King of the Ball</a>
+              <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a href="../html_fut/home_fut.html">Início</a></li>
+                <li><a href="../html_fut/sobre_nos.html">Sobre</a></li>
+                <li><a href="../html_fut/noticia_fut.html">Notícias</a></li>
+                <li><a href="../html_fut/loja_fut.html">Loja</a></li>
+                <li style="float:left;" class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Tabelas</a>
+                    <div class="dropdown-content">
+                      <a href="../html_fut/brasileirão_fut.html">Brasileirão Série-A</a>
+                      <a href="../html_fut/brasileirão_b_fut.html">Brasileirão Série-B</a>
+                      <a href="../html_fut/copa_b_fut.html">Copa Do Brasil</a>
+                      <li style="float:left;" class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Meu Time</a>
+                        <div class="dropdown-content">
+                          <a href="../html_fut/america_mg.html">America-MG</a>
+                          <a href="../html_fut/atletico_mg_fut.html">Atletico-MG</a>
+                          <a href="../html_fut/cruzeiro_fut.html">Cruzeiro</a>
+                          <li style="float:left;" class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn"><img src="../img_fut/icons8-configurações certo.png" width="25px" height="25px"></a>
+                            <div class="dropdown-content">
+                              <a href="../html_fut/edit_perfil.html">Editar Perfil</a>
+                              <a href="../index_fut.html">Sair</a>
+                        </div>
+              </ul>
+            </nav>
+          </header>
+  
+
+<label class="picture" for="picture__input" tabIndex="0">
+    <span class="picture__image"></span>
+  </label>
+  
+  <input type="file" name="picture__input" id="picture__input">
+
+  <body>
+    <div class="login">
+        <h2 style="color: aliceblue;">Edite o Login</h2>
+        <form>
+          <div class="input-group" style="color: aliceblue;">
+            <label for="username">Nome:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group" style="color: aliceblue;">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="input-group" style="color: aliceblue;">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-group" style="color: aliceblue;">
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" required>
+          </div>
+          <div class=".login button:hover">
+           <button type="button"><a  href="../index_fut.html" style="color: aliceblue;">Editar Perfil</button></a>
+           <button type="button"><a  href="../index_fut.html" style="color: aliceblue;">Sair</button></a>
+          </div>
+        </form>
+      </div>
+
+      <script src="../javascript_fut/edit_perfil.js"></script>
+    </body>
